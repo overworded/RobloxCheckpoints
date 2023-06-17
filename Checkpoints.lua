@@ -1,5 +1,5 @@
 local ValueName = "Checkpoint" -- what you want the value name to be (will be stored in the player)
-local Checkpoints = workspace.Checkpoints -- where checkpoints are located
+local Checkpoints = workspace.Checkpoints -- where checkpoints are located (folder)
 
 for i,v in next,Checkpoints:GetChildren() do -- loop through all checkpoints
     v.Touched:Connect(function(touched) -- add a touched event to all checkpoints
