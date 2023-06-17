@@ -16,7 +16,6 @@ end
 game.Players.PlayerAdded:Connect(function(Plr) -- when the player joins the game
     local Val = Instance.new("ObjectValue", Plr) -- making checkpoint value
     Val.Name = ValueName
-    
     Plr.CharacterAdded:Connect(function(Char) -- when the player spawns/respawn 
         if Val.Value ~= nil then -- if there is a value
             wait(0.01) -- idk why i had to do this but roblox is weird
